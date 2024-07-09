@@ -3,7 +3,7 @@
 #     -s SURREAL -t Human36M --seed 0 --debug --rotation 30 --epochs 10 --log logs/train/surreal2human36m
 # CUDA_VISIBLE_DEVICES=0 python train.py data/surreal_processed data/Human36M \
 #     -s SURREAL -t Human36M --seed 0 --debug --rotation 30 --epochs 20 --log logs/train/surreal2human36m1
-CUDA_VISIBLE_DEVICES=2 python train_new.py ~/projects/datasets/SURREAL ~/projects/datasets/LSP \
+CUDA_VISIBLE_DEVICES=1 python train_new.py ~/projects/datasets/SURREAL ~/projects/datasets/LSP \
     -s SURREAL -t LSP --seed 0 --debug --rotation 30 --num-advs 1 --fgen-method 1 --fgen-param 2 --branch-tradeoffs 1 --log logs/train/surreal2lsp --pretrain /home/huangyuchao/projects/projects/backup/kptd/logs/train/surreal2lsp/checkpoints/pretrain.pth
 
 
